@@ -16,7 +16,7 @@ export default function NoletoMotos() {
       preco: 'R$ 12.900',
       km: '45.000 KM',
       imagem: hondaBiz125EX,
-      descricao: 'Honda Biz 125 preta, documentação em dia, IPVA pago.',
+      descricao: 'Honda Biz 125 preta, documentação em dia, revisada.',
       status: 'vendida'
     },
     {
@@ -26,7 +26,7 @@ export default function NoletoMotos() {
       preco: 'R$ 9.500',
       km: '42.856',
       imagem: hondaBiz,
-      descricao: 'Honda Biz 125 preta, documentação em dia, IPVA pago.'
+      descricao: 'Honda Biz 125 preta, documentação em dia, revisada.'
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ export default function NoletoMotos() {
       preco: 'R$ 10.900',
       km: '70.100 KM',
       imagem: honda_Start160_2017,
-      descricao: 'Moto esportiva, revisada e pronta para rodar.',
+      descricao: 'Moto esportiva, documentação em dia, revisada.',
       status: 'vendida'
     },
     {
@@ -45,7 +45,7 @@ export default function NoletoMotos() {
       preco: 'R$ 15.900',
       km: '91.220 KM',
       imagem: honda_Tinta160_2021,
-      descricao: 'Moto esportiva, revisada e pronta para rodar.',
+      descricao: 'Moto esportiva, documentação em dia, revisada.',
       status: 'vendida'
     }, 
     {
@@ -55,7 +55,7 @@ export default function NoletoMotos() {
       preco: 'R$ 5.900',
       km: '99.220 KM',
       imagem: honda_Today125_1989,
-      descricao: 'Moto esportiva, revisada e pronta para rodar.',
+      descricao: 'Moto esportiva, documentação em dia, revisada.',
       status: 'vendida'
     },
     {
@@ -65,7 +65,14 @@ export default function NoletoMotos() {
       preco: 'R$ 54.900',
       km: '4.220 KM',
       imagem: BMW_F900R_2024,
-      descricao: 'Moto esportiva, revisada e pronta para rodar.',
+      descricao:[
+        'Ano: 2024',
+        'Modelo: BMW F900R',
+        'Cor: Preta',
+        'Km: 4.220',
+        'Documentação: Em dia',
+        'Manutenção: Revisada'
+      ], 
       status: 'vendida'
     },
   ];
@@ -118,7 +125,11 @@ export default function NoletoMotos() {
                   <h4 className="text-2xl font-bold">{moto.nome}</h4>
                   <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">{moto.ano}</span>
                 </div>
-                <p className="text-gray-600 mb-4">{moto.descricao}</p>
+                <div className="text-gray-600 mb-4 space-y-1">
+                  {moto.descricao.map((item, index) => (
+                    <p key={index}>{item}</p>
+                  ))}
+                </div>
                 <div className="flex justify-between items-center mb-6">
                   <span className="text-xl font-bold text-green-600">{moto.preco}</span>
                   <span className="text-gray-500 text-sm">{moto.km}</span>
@@ -170,7 +181,7 @@ export default function NoletoMotos() {
           </div>
           <div>
             <h4 className="text-2xl font-bold mb-4">Endereço</h4>
-            <p className="text-gray-300">Goiânia - GO</p>
+            <p className="text-gray-300">Aparecida de Goiânia - GO</p>
           </div>
         </div>
       </section>
