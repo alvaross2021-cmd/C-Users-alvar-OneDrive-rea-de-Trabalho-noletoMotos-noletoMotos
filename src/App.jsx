@@ -1,14 +1,18 @@
 import hondaBiz from './assets/HondaBiz125_2011_Preta.jpeg'
+import hondaBiz125EX from './assets/Honda_Biz125EX_2014.jpeg'
+import hondaBiz from './assets/HondaBiz125_2011_Preta.jpeg'
+import hondaBiz from './assets/HondaBiz125_2011_Preta.jpeg'
+import hondaBiz from './assets/HondaBiz125_2011_Preta.jpeg'
 
 export default function NoletoMotos() {
   const motos = [
     {
       id: 1,
-      nome: 'Honda CB 500F',
-      ano: 2022,
-      preco: 'R$ 39.900',
-      km: '12.000 KM',
-      imagem: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop',
+      nome: 'Honda Biz 125 EX',
+      ano: 2014,
+      preco: 'R$ 12.900',
+      km: '45.000 KM',
+      imagem: hondaBiz125EX,
       descricao: 'Moto esportiva, revisada e pronta para rodar.'
     },
     {
