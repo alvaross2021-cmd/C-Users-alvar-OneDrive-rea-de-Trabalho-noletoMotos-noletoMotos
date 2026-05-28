@@ -1,3 +1,5 @@
+import hondaBiz from './assets/HondaBiz125_2011_Preta.jpeg'
+
 export default function NoletoMotos() {
   const motos = [
     {
@@ -26,7 +28,16 @@ export default function NoletoMotos() {
       km: '2.000 KM',
       imagem: 'https://images.unsplash.com/photo-1609630875171-b1321377ee65?q=80&w=1200&auto=format&fit=crop',
       descricao: 'Super esportiva premium com baixa quilometragem.'
-    }
+    },
+    {
+      id: 4,
+      nome: 'Honda Biz 125',
+      ano: 2011,
+      preco: 'R$ 9.000',
+      km: 'Consulte',
+      imagem: hondaBiz,
+      descricao: 'Honda Biz 125 preta, conservada e pronta para rodar.'
+    },
   ];
 
   return (
