@@ -61,7 +61,7 @@ export default function NoletoMotos() {
       descricao: 'Moto esportiva, revisada e pronta para rodar.'
     }, 
     {
-      id: 6,
+      id: 7,
       nome: 'Honda Today 125',
       ano: 1989,
       preco: 'R$ 5.900',
