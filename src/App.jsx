@@ -8,6 +8,7 @@ import BMW_F900R_2024 from './assets/BMW_F900R_2024.jpeg'
 
 export default function NoletoMotos() {
   const motos = [
+    
     {
       id: 1,
       nome: 'Honda Biz 125 EX',
@@ -15,14 +16,15 @@ export default function NoletoMotos() {
       preco: 'R$ 12.900',
       km: '45.000 KM',
       imagem: hondaBiz125EX,
-      descricao: 'Moto esportiva, revisada e pronta para rodar.'
+      descricao: 'Moto esportiva, revisada e pronta para rodar.',
+      status: 'vendida'
     },
     {
       id: 2,
-      nome: 'Honda Biz 125',
+      nome: 'Honda Biz 125 ES',
       ano: 2011,
       preco: 'R$ 9.000',
-      km: 'Consulte',
+      km: '42.856',
       imagem: hondaBiz,
       descricao: 'Honda Biz 125 preta, conservada e pronta para rodar.'
     },
@@ -33,7 +35,8 @@ export default function NoletoMotos() {
       preco: 'R$ 10.900',
       km: '70.100 KM',
       imagem: honda_Start160_2017,
-      descricao: 'Moto esportiva, revisada e pronta para rodar.'
+      descricao: 'Moto esportiva, revisada e pronta para rodar.',
+      status: 'vendida'
     },
     {
       id: 4,
@@ -42,7 +45,8 @@ export default function NoletoMotos() {
       preco: 'R$ 15.900',
       km: '91.220 KM',
       imagem: honda_Tinta160_2021,
-      descricao: 'Moto esportiva, revisada e pronta para rodar.'
+      descricao: 'Moto esportiva, revisada e pronta para rodar.',
+      status: 'vendida'
     }, 
     {
       id: 5,
@@ -51,7 +55,8 @@ export default function NoletoMotos() {
       preco: 'R$ 5.900',
       km: '99.220 KM',
       imagem: honda_Today125_1989,
-      descricao: 'Moto esportiva, revisada e pronta para rodar.'
+      descricao: 'Moto esportiva, revisada e pronta para rodar.',
+      status: 'vendida'
     },
     {
       id: 6,
@@ -60,7 +65,8 @@ export default function NoletoMotos() {
       preco: 'R$ 54.900',
       km: '4.220 KM',
       imagem: BMW_F900R_2024,
-      descricao: 'Moto esportiva, revisada e pronta para rodar.'
+      descricao: 'Moto esportiva, revisada e pronta para rodar.',
+      status: 'vendida'
     },
   ];
 
@@ -97,8 +103,16 @@ export default function NoletoMotos() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {motos.map((moto) => (
-            <div key={moto.id} className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
-              <img src={moto.imagem} alt={moto.nome} className="h-64 w-full object-cover" />
+            <div
+             key={moto.id}
+             className="relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
+            >
+              {moto.status === 'vendida' && (
+               <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded-xl font-bold z-10">
+                VENDIDA
+               </div>
+              )}
+             <img src={moto.imagem} alt={moto.nome} className="h-64 w-full object-cover" />
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
                   <h4 className="text-2xl font-bold">{moto.nome}</h4>
@@ -109,8 +123,23 @@ export default function NoletoMotos() {
                   <span className="text-xl font-bold text-green-600">{moto.preco}</span>
                   <span className="text-gray-500 text-sm">{moto.km}</span>
                 </div>
-                <a href="https://wa.me/5562999999999" target="_blank" className="block text-center bg-black hover:bg-gray-800 text-white py-3 rounded-2xl transition font-semibold">Tenho Interesse</a>
-              </div>
+                    {moto.status === 'vendida' ? (
+                      <button
+                        disabled
+                        className="block w-full text-center bg-gray-400 cursor-not-allowed text-white py-3 rounded-2xl font-semibold"
+                      >
+                        Moto Vendida
+                      </button>
+                    ) : (
+                      <a
+                        href="https://wa.me/5562999999999"
+                        target="_blank"
+                        className="block text-center bg-black hover:bg-gray-800 text-white py-3 rounded-2xl transition font-semibold"
+                      >
+                        Tenho Interesse
+                      </a>
+                    )}
+                </div>
             </div>
           ))}
         </div>
