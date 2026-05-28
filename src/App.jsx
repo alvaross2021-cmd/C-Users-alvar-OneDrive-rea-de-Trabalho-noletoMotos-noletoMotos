@@ -126,9 +126,10 @@ export default function NoletoMotos() {
                   <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">{moto.ano}</span>
                 </div>
                 <div className="text-gray-600 mb-4 space-y-1">
-                  {moto.descricao.map((item, index) => (
-                    <p key={index}>{item}</p>
-                  ))}
+                  {Array.isArray(moto.descricao)
+                    ? moto.descricao.map((item, index) => <p key={index}>• {item}</p>)
+                    : <p>{moto.descricao}</p>
+                  }
                 </div>
                 <div className="flex justify-between items-center mb-6">
                   <span className="text-xl font-bold text-green-600">{moto.preco}</span>
