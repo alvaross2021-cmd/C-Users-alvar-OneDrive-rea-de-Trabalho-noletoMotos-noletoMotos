@@ -42,6 +42,15 @@ export default function NoletoMotos() {
       imagem: hondaBiz,
       descricao: 'Honda Biz 125 preta, conservada e pronta para rodar.'
     },
+    {
+      id: 5,
+      nome: 'Honda Biz 125 EX',
+      ano: 2014,
+      preco: 'R$ 12.900',
+      km: '45.000 KM',
+      imagem: hondaBiz125EX,
+      descricao: 'Moto esportiva, revisada e pronta para rodar.'
+    },
   ];
 
   return (
