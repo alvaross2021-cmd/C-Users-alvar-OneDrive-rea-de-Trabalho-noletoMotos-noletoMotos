@@ -14,9 +14,17 @@ export default function NoletoMotos() {
       nome: 'Honda Biz 125 EX',
       ano: 2014,
       preco: 'R$ 12.900',
-      km: '45.000 KM',
+      km: '45.785 KM',
       imagem: hondaBiz125EX,
-      descricao: 'Honda Biz 125 preta, documentação em dia, revisada.',
+      descricao:[
+        'Ano: 2014',
+        'Marca: Honda',
+        'Modelo: Biz',
+        'Cor: Preta',
+        'Km: 45.785',
+        'Documentação: Em dia',
+        'Manutenção: Revisada'
+      ],
       status: 'vendida'
     },
     {
@@ -26,7 +34,15 @@ export default function NoletoMotos() {
       preco: 'R$ 9.500',
       km: '42.856',
       imagem: hondaBiz,
-      descricao: 'Honda Biz 125 preta, documentação em dia, revisada.'
+      descricao:[
+        'Ano: 2011',
+        'Marca: Honda',
+        'Modelo: Biz',
+        'Cor: Preta',
+        'Km: 42.856',
+        'Documentação: Em dia',
+        'Manutenção: Revisada'
+      ],
     },
     {
       id: 3,
@@ -35,7 +51,15 @@ export default function NoletoMotos() {
       preco: 'R$ 10.900',
       km: '70.100 KM',
       imagem: honda_Start160_2017,
-      descricao: 'Moto esportiva, documentação em dia, revisada.',
+      descricao:[
+        'Ano: 2017',
+        'Marca: Honda',
+        'Modelo: Start',
+        'Cor: Vermelha',
+        'Km: 70.100',
+        'Documentação: Em dia',
+        'Manutenção: Revisada'
+      ],
       status: 'vendida'
     },
     {
@@ -45,7 +69,15 @@ export default function NoletoMotos() {
       preco: 'R$ 15.900',
       km: '91.220 KM',
       imagem: honda_Tinta160_2021,
-      descricao: 'Moto esportiva, documentação em dia, revisada.',
+      descricao:[
+        'Ano: 2021',
+        'Marca: Honda',
+        'Modelo: Titan',
+        'Cor: Azul Petróleo',
+        'Km: 91.335',
+        'Documentação: Em dia',
+        'Manutenção: Revisada'
+      ],
       status: 'vendida'
     }, 
     {
@@ -55,7 +87,15 @@ export default function NoletoMotos() {
       preco: 'R$ 5.900',
       km: '99.220 KM',
       imagem: honda_Today125_1989,
-      descricao: 'Moto esportiva, documentação em dia, revisada.',
+      descricao:[
+        'Ano: 1989',
+        'Marca: Honda',
+        'Modelo: Today',
+        'Cor: Preta',
+        'Km: 99.200',
+        'Documentação: Em dia',
+        'Manutenção: Revisada'
+      ], 
       status: 'vendida'
     },
     {
@@ -67,7 +107,8 @@ export default function NoletoMotos() {
       imagem: BMW_F900R_2024,
       descricao:[
         'Ano: 2024',
-        'Modelo: BMW F900R',
+        'Marca: BMW',
+        'Modelo: F900R',
         'Cor: Preta',
         'Km: 4.220',
         'Documentação: Em dia',
