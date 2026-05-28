@@ -3,6 +3,8 @@ import hondaBiz125EX from './assets/Honda_Biz125EX_2014.jpeg'
 import honda_Start160_2017 from './assets/Honda_Start160_2017.jpeg'
 import honda_Tinta160_2021 from './assets/Honda_Tinta160_2021.jpeg'
 import honda_Today125_1989 from './assets/Honda_Today125_1989.jpeg'
+import BMW_F900R_2024 from './assets/BMW_F900R_2024.jpeg'
+
 
 export default function NoletoMotos() {
   const motos = [
@@ -49,6 +51,15 @@ export default function NoletoMotos() {
       preco: 'R$ 5.900',
       km: '99.220 KM',
       imagem: honda_Today125_1989,
+      descricao: 'Moto esportiva, revisada e pronta para rodar.'
+    },
+    {
+      id: 6,
+      nome: 'BMW F900R ',
+      ano: 2024,
+      preco: 'R$ 54.900',
+      km: '4.220 KM',
+      imagem: BMW_F900R_2024,
       descricao: 'Moto esportiva, revisada e pronta para rodar.'
     },
   ];
