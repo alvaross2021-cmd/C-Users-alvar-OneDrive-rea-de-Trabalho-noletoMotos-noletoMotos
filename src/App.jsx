@@ -16,17 +16,17 @@ export default function NoletoMotos() {
       preco: 'R$ 12.900',
       km: '45.000 KM',
       imagem: hondaBiz125EX,
-      descricao: 'Moto esportiva, revisada e pronta para rodar.',
+      descricao: 'Honda Biz 125 preta, documentação em dia, IPVA pago.',
       status: 'vendida'
     },
     {
       id: 2,
       nome: 'Honda Biz 125 ES',
       ano: 2011,
-      preco: 'R$ 9.000',
+      preco: 'R$ 9.500',
       km: '42.856',
       imagem: hondaBiz,
-      descricao: 'Honda Biz 125 preta, conservada e pronta para rodar.'
+      descricao: 'Honda Biz 125 preta, documentação em dia, IPVA pago.'
     },
     {
       id: 3,
