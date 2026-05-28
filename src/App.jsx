@@ -17,24 +17,6 @@ export default function NoletoMotos() {
     },
     {
       id: 2,
-      nome: 'Yamaha MT-07',
-      ano: 2023,
-      preco: 'R$ 49.900',
-      km: '8.000 KM',
-      imagem: 'https://images.unsplash.com/photo-1517846693594-1567da72af75?q=80&w=1200&auto=format&fit=crop',
-      descricao: 'Excelente desempenho e conforto para viagens.'
-    },
-    {
-      id: 3,
-      nome: 'BMW S1000RR',
-      ano: 2024,
-      preco: 'R$ 119.900',
-      km: '2.000 KM',
-      imagem: 'https://images.unsplash.com/photo-1609630875171-b1321377ee65?q=80&w=1200&auto=format&fit=crop',
-      descricao: 'Super esportiva premium com baixa quilometragem.'
-    },
-    {
-      id: 4,
       nome: 'Honda Biz 125',
       ano: 2011,
       preco: 'R$ 9.000',
@@ -43,7 +25,7 @@ export default function NoletoMotos() {
       descricao: 'Honda Biz 125 preta, conservada e pronta para rodar.'
     },
     {
-      id: 5,
+      id: 3,
       nome: 'Honda Start 160',
       ano: 2017,
       preco: 'R$ 10.900',
@@ -52,7 +34,7 @@ export default function NoletoMotos() {
       descricao: 'Moto esportiva, revisada e pronta para rodar.'
     },
     {
-      id: 6,
+      id: 4,
       nome: 'Honda Titan 160',
       ano: 2021,
       preco: 'R$ 15.900',
@@ -61,7 +43,7 @@ export default function NoletoMotos() {
       descricao: 'Moto esportiva, revisada e pronta para rodar.'
     }, 
     {
-      id: 7,
+      id: 5,
       nome: 'Honda Today 125',
       ano: 1989,
       preco: 'R$ 5.900',
