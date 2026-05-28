@@ -1,8 +1,8 @@
 import hondaBiz from './assets/HondaBiz125_2011_Preta.jpeg'
 import hondaBiz125EX from './assets/Honda_Biz125EX_2014.jpeg'
-import hondaBiz from './assets/HondaBiz125_2011_Preta.jpeg'
-import hondaBiz from './assets/HondaBiz125_2011_Preta.jpeg'
-import hondaBiz from './assets/HondaBiz125_2011_Preta.jpeg'
+import honda_Start160_2017 from './assets/Honda_Start160_2017.jpeg'
+import honda_Tinta160_2021 from './assets/Honda_Tinta160_2021.jpeg'
+import honda_Today125_1989 from './assets/Honda_Today125_1989.jpeg'
 
 export default function NoletoMotos() {
   const motos = [
@@ -44,11 +44,29 @@ export default function NoletoMotos() {
     },
     {
       id: 5,
-      nome: 'Honda Biz 125 EX',
-      ano: 2014,
-      preco: 'R$ 12.900',
-      km: '45.000 KM',
-      imagem: hondaBiz125EX,
+      nome: 'Honda Start 160',
+      ano: 2017,
+      preco: 'R$ 10.900',
+      km: '70.100 KM',
+      imagem: honda_Start160_2017,
+      descricao: 'Moto esportiva, revisada e pronta para rodar.'
+    },
+    {
+      id: 6,
+      nome: 'Honda Titan 160',
+      ano: 2021,
+      preco: 'R$ 15.900',
+      km: '91.220 KM',
+      imagem: honda_Tinta160_2021,
+      descricao: 'Moto esportiva, revisada e pronta para rodar.'
+    }, 
+    {
+      id: 6,
+      nome: 'Honda Today 125',
+      ano: 1989,
+      preco: 'R$ 5.900',
+      km: '99.220 KM',
+      imagem: honda_Today125_1989,
       descricao: 'Moto esportiva, revisada e pronta para rodar.'
     },
   ];
